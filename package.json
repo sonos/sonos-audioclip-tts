@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "google-tts-api": "0.0.3",
+    "google-tts-api": "0.0.4",
     "node-persist": "^3.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
