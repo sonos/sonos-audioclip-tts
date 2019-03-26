@@ -199,7 +199,7 @@ app.get('/api/clipCapableSpeakers', async (req, res) => {
   const players = groups.players; // Let's get all the clip capable players
   const clipCapablePlayers = [];
   for (let player of players) {
-    if (!player.capabilities.includes('AUDIO_CLIP')) { // Remember when I said above that AUDIO_CLIP capability isn't implemented? So here we'll look for the "!" boolean
+    if (player.capabilities.includes('AUDIO_CLIP')) {
       clipCapablePlayers.push({'id':player.id,'name':player.name});
     }
   }
